@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 40px;
+    cursor: pointer; /* 클릭 가능한 커서 추가 */
+}
+
+nav a {
+    margin: 0 1rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lang a {
+    margin-left: 0.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.main {
+    height: 100vh;
+    background-image: url('background.jpg'); /* 배경 이미지 경로 */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.main-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.main-text p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
