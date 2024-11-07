@@ -44,12 +44,6 @@ nav a {
     font-weight: bold;
 }
 
-.lang a {
-    margin-left: 0.5rem;
-    color: #333;
-    text-decoration: none;
-}
-
 /* 메인 섹션 스타일 */
 .main {
     height: 100vh;
