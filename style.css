@@ -12,8 +12,8 @@ body {
 /* 고정된 로고 스타일 */
 .logo {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 1rem;
+    left: 3rem;
     padding: 1rem;
     z-index: 1001; /* 헤더보다 위에 배치 */
 }
@@ -32,9 +32,9 @@ header {
     background-color: rgba(255, 255, 255, 0.8);
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 3.5rem;
     z-index: 1000;
-    margin-top: 80px; /* 로고 아래에 헤더 배치 */
+    margin-top: 0px; /* 로고 아래에 헤더 배치 */
 }
 
 nav a {
