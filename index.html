@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 헤더 외부에 고정된 로고 -->
-    <div class="logo">
-        <a href="index.html">
-            <img src="logo.png" alt="로고" />
-        </a>
-    </div>
-
-    <!-- 헤더 -->
+    <!-- 헤더 - 로고와 네비게이션이 포함된 단일 헤더 -->
     <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="로고" />
+            </a>
+        </div>
         <nav>
             <a href="header1.html">Header1</a>
             <a href="header2.html">Header2</a>
@@ -25,7 +23,7 @@
     </header>
 
     <!-- 커버 섹션 -->
-    <section class="cover" id="cover">
+    <section class="cover">
         <h1>WELCOME TO MY</h1>
         <h2>PORTFOLIO</h2>
         <p>Explore my work and projects in this website</p>
@@ -39,21 +37,8 @@
         </div>
     </section>
 
-    <script>
-        // 창 크기 변화에 따라 커버 영역을 위로 밀어 올리는 함수
-        function adjustCoverPosition() {
-            const cover = document.getElementById('cover');
-            const windowHeight = window.innerHeight;
-            const offset = Math.max(0, (800 - windowHeight) / 2); // 800은 임의의 커버 높이
-
-            cover.style.transform = `translateY(-${offset}px)`;
-        }
-
-        // 창 크기 변화 감지
-        window.addEventListener('resize', adjustCoverPosition);
-
-        // 초기 호출
-        adjustCoverPosition();
-    </script>
+    <footer>
+        <p>&copy; 2024 Jintaek's Portfolio. All rights reserved.</p>
+    </footer>
 </body>
 </html>

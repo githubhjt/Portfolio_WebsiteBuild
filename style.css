@@ -10,18 +10,10 @@ body {
     overflow-x: hidden;
 }
 
-.logo {
-    padding: 1rem;
-}
-
-.logo img {
-    height: 50px;
-    cursor: pointer;
-}
-
+/* 통합된 헤더 스타일 */
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     background-color: rgba(255, 255, 255, 0.8);
@@ -29,6 +21,12 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+/* 로고 스타일 */
+.logo img {
+    height: 50px;
+    cursor: pointer;
 }
 
 nav a {
@@ -39,6 +37,7 @@ nav a {
     font-weight: bold;
 }
 
+/* 커버 섹션 스타일 */
 .cover {
     height: 800px;
     background-color: #8c8c8c;
@@ -49,7 +48,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease-out; /* 부드러운 애니메이션 */
+    transition: transform 0.3s ease-out;
 }
 
 .cover h1 {
@@ -68,6 +67,7 @@ nav a {
     margin-top: 1rem;
 }
 
+/* 메인 섹션 스타일 */
 .main {
     min-height: 800px;
     background-image: url('background.jpg');
@@ -92,6 +92,7 @@ nav a {
     margin: 0 auto;
 }
 
+/* 푸터 스타일 */
 footer {
     background-color: #333;
     color: #fff;
