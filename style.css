@@ -52,12 +52,22 @@ header {
     justify-content: center; /* 중앙 정렬 */
     align-items: center;
     padding: 1rem 2rem;
-    background-color: rgba(255, 255, 255, 0.8);
     position: fixed;
     width: 100%;
-    top: 3.5rem;
+    top: 3.5rem; /* 텍스트 위치 유지 */
     z-index: 1000;
-    margin-top: 0px; /* 로고 아래에 헤더 배치 */
+}
+
+/* 헤더 배경을 위한 가상 요소 */
+header::before {
+    content: "";
+    position: absolute; /* 헤더 영역의 배경으로 설정 */
+    top: -3.5rem; /* 상단을 최상단에 붙이기 */
+    left: 0;
+    width: 100%;
+    height: calc(100% + 3.5rem); /* 헤더 높이와 위쪽 확장만큼 배경 높이 설정 */
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: -1; /* 텍스트 뒤로 배경 놓기 */
 }
 
 nav a {
