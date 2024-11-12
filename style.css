@@ -39,7 +39,7 @@ nav a {
 
 /* 커버 섹션 스타일 */
 .cover {
-    height: 800px;
+    height: 650px;
     background-color: #8c8c8c;
     color: #333;
     text-align: center;
@@ -52,13 +52,13 @@ nav a {
 }
 
 .cover h1 {
-    font-size: 48px;
+    font-size: 90px;
     margin: 0;
 }
 
 .cover h2 {
-    font-size: 72px;
-    margin-top: 1rem;
+    font-size: 135px;
+    margin-top: 0rem;
 }
 
 .cover p {
