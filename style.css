@@ -11,7 +11,7 @@ body {
 
 /* 커버 섹션 스타일 */
 .cover {
-    height: 60vh; /* 커버 영역 높이 설정 */
+    height: 65vh; /* 커버 영역 높이 설정 */
     background-color: #8c8c8c; /* 원하는 색상 코드 */
     display: flex;
     flex-direction: column;
@@ -24,6 +24,7 @@ body {
 
 .cover h1 {
     font-size: 3rem;
+    margin-top: 4.5rem; /* 헤더 하단부터 텍스트 위치 조정 */
     margin-bottom: 1rem;
 }
 
