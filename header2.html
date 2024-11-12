@@ -29,5 +29,17 @@
             <!-- 사진 및 영상 갤러리를 여기에 추가 -->
         </div>
     </section>
+
+    <!-- 푸터 로드 -->
+    <div id="footer"></div>
+
+    <script>
+        // footer.html을 로드하여 #footer div에 추가
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
