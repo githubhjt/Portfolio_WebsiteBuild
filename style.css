@@ -69,13 +69,19 @@ nav a {
 }
 
 .cover h1 {
-    font-size: 3rem;
+    font-size: 8vw;
     margin-top: 4.5rem; /* 헤더 하단부터 텍스트 위치 조정 */
+    margin-bottom: 0;
+}
+
+.cover h2 {
+    font-size: 12vw;
+    margin-top: 0; /* 헤더 하단부터 텍스트 위치 조정 */
     margin-bottom: 1rem;
 }
 
 .cover p {
-    font-size: 1.5rem;
+    font-size: 1vw;
     max-width: 600px;
 }
 
