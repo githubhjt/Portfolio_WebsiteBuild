@@ -94,14 +94,98 @@ nav a {
 
 /* 푸터 스타일 */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10rem;
-    width: 100%;
+    background-color: #2a3b47;
+    color: #b0c7d1;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
 }
 
-footer p {
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.newsletter {
+    grid-column: 1 / 2;
+}
+
+.newsletter h3 {
+    color: #6fbfbe;
+    font-size: 1.5rem;
+}
+
+.newsletter p {
+    margin-top: 0.5rem;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.newsletter-form input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 0.5rem 1rem;
+    background-color: #6fbfbe;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.contact-info {
+    grid-column: 2 / 3;
+}
+
+.contact-info h4 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.social-icons a img {
+    width: 24px;
+    margin-right: 0.5rem;
+}
+
+.footer-links {
+    grid-column: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-links h5 {
+    color: #6fbfbe;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links p {
+    color: #b0c7d1;
     margin: 0;
-    font-size: 0.9rem;
+}
+
+.copyright {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #4a5b6c;
+    padding-top: 1rem;
+    color: #b0c7d1;
 }
