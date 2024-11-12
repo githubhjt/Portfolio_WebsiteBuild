@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 헤더 외부에 고정된 로고 -->
+    <div class="logo">
+        <a href="index.html">
+            <img src="logo.png" alt="로고" />
+        </a>
+    </div>
+
     <!-- 헤더 -->
     <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="logo.png" alt="로고" />
-            </a>
-        </div>
         <nav>
             <a href="header1.html">Header1</a>
             <a href="header2.html">Header2</a>
@@ -22,22 +24,36 @@
         </nav>
     </header>
 
-    <!-- 인트로 섹션 -->
-    <section class="intro">
+    <!-- 커버 섹션 -->
+    <section class="cover" id="cover">
         <h1>WELCOME TO MY</h1>
         <h2>PORTFOLIO</h2>
         <p>Explore my work and projects in this website</p>
     </section>
 
-    <!-- 콘텐츠 섹션 -->
-    <section class="content">
-        <h1>"Hello, World!" This is Jintaek.</h1>
-        <p>여기다가 기본 텍스트 어쩌구 저쩌구 넣어주면 될거 같고..</p>
+    <!-- 메인 섹션 -->
+    <section class="main">
+        <div class="main-text">
+            <h1>"Hello, World!" This is Jintaek.</h1>
+            <p>여기다가 기본 텍스트 어쩌구 저쩌구 넣어주면 될거 같고..</p>
+        </div>
     </section>
 
-    <!-- 푸터 -->
-    <footer>
-        <p>&copy; 2024 Jintaek's Portfolio. All rights reserved.</p>
-    </footer>
+    <script>
+        // 창 크기 변화에 따라 커버 영역을 위로 밀어 올리는 함수
+        function adjustCoverPosition() {
+            const cover = document.getElementById('cover');
+            const windowHeight = window.innerHeight;
+            const offset = Math.max(0, (800 - windowHeight) / 2); // 800은 임의의 커버 높이
+
+            cover.style.transform = `translateY(-${offset}px)`;
+        }
+
+        // 창 크기 변화 감지
+        window.addEventListener('resize', adjustCoverPosition);
+
+        // 초기 호출
+        adjustCoverPosition();
+    </script>
 </body>
 </html>
