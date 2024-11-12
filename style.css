@@ -55,7 +55,7 @@ header {
     padding: 1rem 2rem;
     position: fixed;
     width: 100%;
-    top: 3.5rem; /* 텍스트 위치 유지 */
+    top: 2.5rem; /* 텍스트 위치 유지 */
     z-index: 1000;
 }
 
@@ -66,7 +66,7 @@ header::before {
     top: -3.5rem; /* 상단을 최상단에 붙이기 */
     left: 0;
     width: 100%;
-    height: calc(100% + 3.5rem); /* 헤더 높이와 위쪽 확장만큼 배경 높이 설정 */
+    height: calc(145% + 3.5rem); /* 헤더 높이와 위쪽 확장만큼 배경 높이 설정 */
     background-color: rgba(255, 255, 255, 0.8);
     z-index: -1; /* 텍스트 뒤로 배경 놓기 */
 }
@@ -75,6 +75,7 @@ nav a {
     margin: 0 1rem;
     color: #333;
     text-decoration: none;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
