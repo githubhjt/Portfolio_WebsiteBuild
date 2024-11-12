@@ -108,6 +108,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr;
     gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 .e-mail {
@@ -146,6 +147,8 @@ footer {
 
 .student-info {
     grid-column: 2 / 3;
+    margin-left: 36rem;
+    margin-right: 5rem;
 }
 
 .student-info h4 {
